@@ -1,6 +1,5 @@
 var fs = require('fs');
 
-
 var validator = function(line) {
    if (!vowelcounter(line)) {
       return false;

@@ -112,8 +112,8 @@ fs.readFile('input.txt', function(err, data) {
       var line = lines[i];
       var options = parseLine(line);
       if (options) {
-         lightsOne.alter(parseLine(line));
-         lightsTwo.alter(parseLine(line));
+         lightsOne.alter(options);
+         lightsTwo.alter(options);
       }
    }
    console.log(lightsOne.onCount());
